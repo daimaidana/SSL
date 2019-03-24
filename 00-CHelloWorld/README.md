@@ -32,4 +32,5 @@ el usuario GitHub.
 Restricciones
 * Ninguna.
 
-* Productos. 
+Productos. 
+![imagen consigna](https://github.com/daimaidana/SSL/blob/master/00-CHelloWorld/imagen%20consigna.png)
