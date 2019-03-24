@@ -1,11 +1,11 @@
- Sintaxis y Semántica de los Lenguajes
+ # Sintaxis y Semántica de los Lenguajes
 
-	• K2051
+* Curso: K2051
 
-	• Curso: 2019
+* Año: 2019
 
-	• Legajo: 1593699
+* Legajo: 159.369-9
 
-	• Apellido: Maidana
+* Apellido: Maidana
 
-	• Nombre: Daiana Melody
+* Nombre: Daiana Melody
