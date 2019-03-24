@@ -1,10 +1,9 @@
 /*
  ============================================================================
- Name        : Hello.c
- Author      : 
- Version     :
- Copyright   : Your copyright notice
- Description : Hello World in C, Ansi-style
+ Qué: TP #0 - Hello World
+ Descripción : Hello World in C.
+ Quién:  Daiana Maidana
+ Cuándo: 24/03/19
  ============================================================================
  */
 
