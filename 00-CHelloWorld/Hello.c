@@ -3,7 +3,7 @@
  Qué: TP #0 - Hello World
  Descripción : Hello World in C.
  Quién:  Daiana Maidana
- Cuándo: 24/03/19
+ Cuándo: 31/03/19
  ============================================================================
  */
 
@@ -11,6 +11,6 @@
 #include <stdlib.h>
 
 int main(void) {
-	printf("!!!Hello World!!!"); /* prints !!!Hello World!!! */
+	printf("!!!Hello World!!!");
 	return EXIT_SUCCESS;
 }
