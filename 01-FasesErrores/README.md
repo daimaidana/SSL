@@ -104,14 +104,20 @@ Punto 6)
 Se ejecutó: 
 > gcc -S Hello3.c -o Hello3.s
 
-Y la consola me tira error, no reconoce la palabra prontf y nos sugiere usar printf. Tambien tira en main "error: expected declaration or statement at end of input", en la cual se debe referir a que falta una llave que cierre el main. 
+Y la consola me tira un :
+> warning: implicit declaration of function 'prontf'; did you mean 'printf'?
+Porque reconoce que pront f es una funcion, pero no está declarada en ningún lado. Por eso el aviso de que se está definiendo implícitamente. Esto depende del compilador, en este caso nos permiten invocar una función sin declararla.
+
+Lo que nos dice, es que lo siguiente:
+> "error: expected declaration or statement at end of input"
+El cual se refiere a que falta una llave que cierre el main. 
 
 Punto 7 y 8)
-Se ejecutó: 
+Corrijo la llave faltante y ejecuto: 
 > gcc -S Hello4.c -o Hello4.s
 
-Y al abrir el archivo, se obserba el programa en lenguaje ensamblador como se esperaba. 
-Además, en el main se observan los comandos similares vistos en clases, con respecto al stack que se va modificando a medida que se ejecuta el programa. Se obserban los comandos pushq, movq, subq, call y pop entre otros. 
+Y al abrir el archivo, se observa el programa en lenguaje ensamblador como se esperaba. 
+Además, en el main se observan los comandos similares vistos en clases, con respecto al stack que se va modificando a medida que se ejecuta el programa. Se observan los comandos pushq, movq, subq, call y pop entre otros, además la función prontf sigue intacta. Esto es porque el compilador no conoce esa referencia externa y todavía no se ocupó de resolverla.
 
 Punto 9)
 Se ejecutó: 
@@ -120,10 +126,13 @@ Se ejecutó:
 Se generó correctamente, y no se puede leer al abrirse (Tiene sentido porque está en la etapa en la que el código esta en lenguaje máquina).
 
 Punto 10) 
-Se ejecutó: 
+Se ejecutó (se linkea con la biblioteca estándar por default): 
 > gcc Hello4.0 -o Hello4.exe
 
-Y no generó nada, dió error. Debe ser porque no está definida la biblioteca estandar.
+Y no generó nada, dió error:
+> referencia a `prontf' sin definir. 
+Es porque no encuentra la referencia externa en ningun lado.
+
 
 Punto 11 y 12)
 Se corrigió, y con el comando: 
