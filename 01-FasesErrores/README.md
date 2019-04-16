@@ -60,7 +60,8 @@ hello4.s, no ensamblar.
 		 printf("La respuesta es %d\n", i);
 	}
 ```
-15.Explicar porqué funciona.
+15.Explicar porqué funciona.
+
 
 Restricciones
 * El programa ejemplo debe enviar por stdout la frase "La respuesta es 42", el
@@ -75,7 +76,8 @@ Productos:
 	|-- hello4.c
 	|-- hello5.c
 	|-- hello6.c
-	`-- hello7.c
+	`-- hello7.c
+
 ```
 
 ## Resolución: 
@@ -137,6 +139,7 @@ Es porque no encuentra la referencia externa en ningun lado.
 Punto 11 y 12)
 Se corrigió, y con el comando: 
 > gcc Hello5.c -o Hello5.exe
+
 Se generó el ejecutable. Pero al probarlo, veo que no me da el valor que quiero, sino que da otro valor cualquiera. Si volvemos a ejecutar, observamos que nos da otro valor distinto. Es porque el i=42 está definido fuera del printf y no sabe que de dónde tiene que sacar el valor para mostrar en pantalla. Se soluciona agregando el i como 2do parámetro del printf.
 
 Punto 13) 
